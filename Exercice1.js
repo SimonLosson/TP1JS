@@ -1,4 +1,12 @@
 /**
+ * Cyril Cuvelier - Simon Losson
+ * CIR 2 ISEN
+ * 13/10/2021
+ * TP1
+ */
+
+
+/**
  * Cette fonction fait une opperation qui est defini avec le paramètre opperateur sur l'ensemble des nombres contenus dans args
  * Pour la division, les premiers éléments sont sommés et divisiés par le dernier.
  * Pour la mise au carré, le permier nombre est mis à la puissance et les autres sont traités en fonction de l'oppérateur en fin de chaine.

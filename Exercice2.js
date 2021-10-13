@@ -1,3 +1,10 @@
+/**
+ * Cyril Cuvelier - Simon Losson
+ * CIR 2 ISEN
+ * 13/10/2021
+ * TP1
+ */
+
 const addition = (nb1, nb2) => nb1 + nb2; // Fonction qui fait la somme de nb1 + nb2
 const soustraction = (nb1, nb2) => nb1 - nb2; // Fonction qui fait la soustraction de nb1 - nb2
 const multiplication = (nb1, nb2) => nb1 * nb2; // Fonction qui multiplie nb1 par nb2

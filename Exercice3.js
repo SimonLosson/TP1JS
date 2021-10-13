@@ -1,3 +1,10 @@
+/**
+ * Cyril Cuvelier - Simon Losson
+ * CIR 2 ISEN
+ * 13/10/2021
+ * TP1
+ */
+
 let myArray = [157, 10, 81, 1000, 4, 1024, 16, 492, 9, 287, 0]; // Angle donnés en degrés
 
 // On filtre les éléments du tableau pour ne garder que ceux qui sont impairs

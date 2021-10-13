@@ -12,6 +12,13 @@ cleanString = (array) => array.toLowerCase().replace(/\s+/g, '').replace(/[&\/\\
 
 let chainetraitee = cleanString(fact);
 
+/**
+ * Cyril Cuvelier - Simon Losson
+ * CIR 2 ISEN
+ * 13/10/2021
+ * TP1
+ */
+
 // Fonction qui remplace Chuck Norris par nom
 const remplace = nom => fact.replace(/Chuck Norris/g, nom);
 // Fonction qui donne la moyenne de lettre dans chaque mot d'une pharse.

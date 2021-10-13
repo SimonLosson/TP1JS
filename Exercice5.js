@@ -1,3 +1,10 @@
+/**
+ * Cyril Cuvelier - Simon Losson
+ * CIR 2 ISEN
+ * 13/10/2021
+ * TP1
+ */
+
 // Fonction qui somme deux nombres
 const somme = (previousValue, currentValue) => previousValue + currentValue;
 // Fonction qui vient de google et qui donne un nombre aléatoire entre min et max

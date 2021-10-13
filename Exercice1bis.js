@@ -1,4 +1,19 @@
 /**
+ * Cyril Cuvelier - Simon Losson
+ * CIR 2 ISEN
+ * 13/10/2021
+ * TP1
+ */
+
+/**
+ * Fait pour le FUN en 3h avec comme but d'amélioré la fonction de l'exercice 1 qui elle même était sensé être une
+ * amélioration de 5 fonctions : somme, différence, produit, puissance, division. J'ai essayé d'avoir un code le plus
+ * modulaire possible...
+ * La conclusion : A vouloir trop optimisern, on s'y perd.
+ */
+
+
+/**
  * Fonction doTheCalcul, qui prends comme paramètres l'operateur ainsi que les nombres qui doivent
  * être calculés. Le nombre d'argument est ilimité sauf pour la division (ça n'a pas de sens sinon, fin
  * peut être mais j'ai pas réussi à l'implémenter)
