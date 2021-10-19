@@ -9,9 +9,9 @@
 const somme = (previousValue, currentValue) => previousValue + currentValue;
 // Fonction qui vient de google et qui donne un nombre aléatoire entre min et max
 const randomNum = (min, max) => Math.floor(Math.random() * (max - min)) + min;
-// Focntion qui donne le nombre de personne à la soirée entre 200 et 300 (le nombre de base est 250 avec plus ou moins 50 personnes)
+// Fonction qui donne le nombre de personnes à la soirée entre 200 et 300 (le nombre de base est 250 avec plus ou moins 50 personnes)
 const getNumeberOfPerson = () => randomNum(200, 300);
-// Fonction qui simule une soirée et qui retourne le nombre de personne qui ont bu le cooktail.
+// Fonction qui simule une soirée et qui retourne le nombre de personnes qui ont bu le cocktail.
 const party = (numberOfPerson) => {
     let nbOfDrink = 0;
     for (let i = 0; i < numberOfPerson; i++){ // On interroge virtuellement chaque personne
@@ -20,7 +20,7 @@ const party = (numberOfPerson) => {
     }
     return nbOfDrink;
 };
-// Fonction qui simule n soirée(s) avec toutes les fonctions créées précédament
+// Fonction qui simule n soirée(s) avec toutes les fonctions créées précédemment
 const simulation = () => {
     let average = 0;
     let arrayNbOfDrink = [];
@@ -37,4 +37,4 @@ const simulation = () => {
     return [average, nbOfSimulation];
 }
 
-console.log("Le nombre de cooktail bu durant les soirées est en moyenne de : ", simulation()[0].toFixed(0), " en faissant ", simulation()[1], "simulation(s)");
+console.log("Le nombre de cocktails bus durant les soirées est en moyenne de : ", simulation()[0].toFixed(0), " en faisant ", simulation()[1], "simulation(s)");
