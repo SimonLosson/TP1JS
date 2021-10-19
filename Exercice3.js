@@ -35,4 +35,3 @@ function logInArray(array){
 console.log("Le tableau des nombres impaire : ", impaire);
 console.log("Le tabeau des sinus : ", sinus);
 console.log("Le nombre d'éléments qui respectent la condition imposée : ", logInArray(myArray));
-console.log("Le nombre d'éléments qui respectent la condition imposée : ", logInArray(myArray));
