@@ -9,7 +9,7 @@ let myArray = [20,1,13,8,10,6,15,25,2,10,14,18,9];
 let torture = [32, 12, 4, 8, 12, 54, 21, 18, 16, 72, 10, 32, 63, 31, 23, 53, 12, 82, 12];
 
 /**
- * Fonction qui affiche dans le terminal un histogramme à partir de valeurs données dnas un tableau
+ * Fonction qui affiche dans le terminal un histogramme à partir de valeurs données dans un tableau
  * @param array Tableau de nombres
  */
 const histogram = array => {
@@ -27,7 +27,7 @@ const histogram = array => {
         line = "";
 
         /**
-         * Ce block est la pour géré l'affichage de l'échelle. Selon la valeur de i, il affiche soit |, soit i
+         * Ce block est là pour gérer l'affichage de l'échelle. Selon la valeur de i, il affiche soit |, soit i
          * Il faut faire attention aux espaces
          */
 
@@ -41,7 +41,7 @@ const histogram = array => {
         }
 
         /**
-         * Ce block la est fait pour remplir la fin de la ligne. Il compart chaque élément du tableau avec la valeur de i,
+         * Ce block là est fait pour remplir la fin de la ligne. Il compare chaque élément du tableau avec la valeur de i,
          * si l'élément est supérieur ou égal à i. Il est affiché, sinon on affiche un espace (IMPORTANT, si on oublie les espaces,
          * tout notre tableau est décalé. Cf version 1 de ce code :cry:)
          */
@@ -62,7 +62,7 @@ const histogram = array => {
     }
 
     /**
-     * La fin du programme créée la ligne 0
+     * La fin du programme crée la ligne 0
      */
 
     line = " 0 ";
