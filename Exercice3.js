@@ -14,10 +14,10 @@ let impaire = myArray.filter(number => number % 2 === 1);
 let sinus = myArray.map(number => Math.sin(number * (Math.PI / 180)));
 
 /**
- * Fonction qui compart le logarithme en base 10 d'un nombre avec sa position dans un tableau. Si les deux sont égales,
- * le nombre total est incrémenté. La fonction retourne total, càd le nombre d'éléments du tableau qui réspecte cette condition
+ * Fonction qui compare le logarithme en base 10 d'un nombre avec sa position dans un tableau. Si les deux sont égales,
+ * le nombre total est incrémenté. La fonction retourne total, càd le nombre d'éléments du tableau qui respectent cette condition
  * @param array Le tableau a traité
- * @returns {number} Le nombre d'éléments qui respect la condition testé
+ * @returns {number} Le nombre d'éléments qui respectent la condition testé
  */
 function logInArray(array){
     let total = 0;
@@ -32,6 +32,6 @@ function logInArray(array){
 }
 
 
-console.log("Le tableau des nombres impaire : ", impaire);
+console.log("Le tableau des nombres impairs : ", impaire);
 console.log("Le tabeau des sinus : ", sinus);
 console.log("Le nombre d'éléments qui respectent la condition imposée : ", logInArray(myArray));
