@@ -6,18 +6,18 @@
  */
 
 /**
- * Fait pour le FUN en 3h avec comme but d'amélioré la fonction de l'exercice 1 qui elle même était sensé être une
+ * Fait pour le FUN en 3h avec comme but d'améliorer la fonction de l'exercice 1 qui elle-même était censé être une
  * amélioration de 5 fonctions : somme, différence, produit, puissance, division. J'ai essayé d'avoir un code le plus
  * modulaire possible...
- * La conclusion : A vouloir trop optimisern, on s'y perd.
+ * La conclusion : A vouloir trop optimiser, on s'y perd.
  */
 
 
 /**
- * Fonction doTheCalcul, qui prends comme paramètres l'operateur ainsi que les nombres qui doivent
- * être calculés. Le nombre d'argument est ilimité sauf pour la division (ça n'a pas de sens sinon, fin
+ * Fonction doTheCalcul, qui prend comme paramètres l'opérateur ainsi que les nombres qui doivent
+ * être calculés. Le nombre d'argument est illimité sauf pour la division (ça n'a pas de sens sinon, fin
  * peut être mais j'ai pas réussi à l'implémenter)
- * La fonction renvoie la valeur des operations
+ * La fonction renvoie la valeur des opérations
  * @param operateur '+', '-', '*', '/', '^'
  * @param args Les nombres
  * @returns {number} La valeur du calcul
@@ -54,8 +54,8 @@ const doTheCalcul = (operateur, ...args) => {
 }
 
 /**
- * La Fonction calculerLesParentheses, prend en entrée une string ou il y a des parenthéses. Elle extrait les parenthéses
- * et les calule. Elle remplace ensuite ces parenthéses par leur valeur dans le string : "(2+4)-6" => "6-6"
+ * La Fonction calculerLesParentheses, prend en entrée une string où il y a des parenthèses. Elle extrait les parenthèses
+ * et les calcule. Elle remplace ensuite ces parenthèses par leur valeur dans le string : "(2+4)-6" => "6-6"
  * @param calcul string du type "(a/b)*c^d+(e-f)"
  * @returns {string} string du type "A*c^d+E"
  */
@@ -100,7 +100,7 @@ const calculerLesParentheses = (calcul) => {
             console.log("Il y a une erreur dans une parenthése !");
             resultatParenthese = 0;
         }
-        // On remplace l'endroit ou l'on a trouvé les parenthéses par le résultat
+        // On remplace l'endroit où l'on a trouvé les parenthèses par le résultat
         calcul = calcul.slice(0, start) + resultatParenthese + calcul.slice(end, calcul.length);
     }
 
@@ -138,8 +138,8 @@ const doAllCalcul = (operator, calcul) => {
 }
 
 /**
- * Fonction operation est la fonction qui fait le pont entre toutes les fonctions précédentes. Elle reçoit en entrée un
- * calcul sous la forme d'un string et en resort le résultat.
+ * Fonction opération est la fonction qui fait le pont entre toutes les fonctions précédentes. Elle reçoit en entrée un
+ * calcul sous la forme d'un string et en ressort le résultat.
  * @param calcul string du type "a/b*c^d+e-f"
  * @returns {float} resultat du calcul
  */
@@ -151,9 +151,9 @@ const operation = (calcul) =>{
         console.log("Vous n'avez pas rentré de calcul...");
     }else{
 
-        // On commence par chercher les parenthéses pour les calculer
+        // On commence par chercher les parenthèses pour les calculer
         calcul = calculerLesParentheses(calcul);
-        // Maintenant que l'on a une ligne de calcul sans parenthese, on s'attaque aux priorités
+        // Maintenant que l'on a une ligne de calcul sans parenthèse, on s'attaque aux priorités
         calcul = doAllCalcul('^', calcul);
         calcul = doAllCalcul('*', calcul);
         calcul = doAllCalcul('/', calcul);
